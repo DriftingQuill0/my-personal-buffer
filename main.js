@@ -22,18 +22,7 @@ function renderCalendar() {
   }
 }
 
-document.login = () => {
-  alert("Demo mode: login is simulated. No Google sign-in needed.");
-  authDiv.style.display = "none";
-  dashboard.style.display = "block";
-};
 
-document.logout = () => {
-  if (confirm("Log out?")) {
-    authDiv.style.display = "block";
-    dashboard.style.display = "none";
-  }
-};
 
 postForm.addEventListener("submit", e => {
   e.preventDefault();
