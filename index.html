@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Personal Buffer</title>
+  <link href='https://cdn.jsdelivr.net/npm/fullcalendar @6.1.10/index.global.min.css' rel='stylesheet' />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+  <div id="auth">
+  <button onclick="_login()">Login with Google</button>
+</div>
+
+<div id="dashboard" style="display:none;">
+  <h1>Personal Buffer</h1>
+  <button onclick="_logout()">Logout</button>
+    <form id="postForm">
+      <textarea id="content" placeholder="Your post content..." required></textarea><br/>
+      <select id="platform">
+        <option value="Twitter">Twitter</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Instagram">Instagram</option>
+      </select><br/>
+      <input type="datetime-local" id="scheduleTime" required /><br/>
+      <button type="submit">Schedule Post</button>
+    </form>
+
+    <div id="calendar"></div>
+  </div>
+</div>
+
+<script type="module" src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar @6.1.10/index.global.min.js"></script>
+</body>
+</html>

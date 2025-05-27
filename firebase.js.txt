@@ -1,0 +1,2 @@
+// firebase.js – now just a dummy file (we'll use localStorage instead)
+export const useLocalStorage = true;
